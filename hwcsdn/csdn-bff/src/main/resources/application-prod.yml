@@ -1,0 +1,6 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://118.24.138.173:9090/eureka
+csdn:
+  url: http://csdn:9093

@@ -1,0 +1,9 @@
+server:
+  port: 9094
+spring:
+  profiles:
+    active: dev
+  resources:
+    static-locations: classpath:/static/,classpath:/templates/,classpath:/resources/
+  application:
+    name: csdn-bff
