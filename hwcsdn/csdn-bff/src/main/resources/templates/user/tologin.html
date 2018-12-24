@@ -70,13 +70,18 @@
                 contentType: "application/json; charset=utf-8",
                 success:function(data){
                     if("0000"==data.success){
-                        window.location = "../index.html";
-                    }else{
-                        layer.msg(data.data);
-                    }
-                }
+                        var curWwwPath = window.document.location.href;
+                        //获取主机地址之后的目录，如： uimcardprj/share/meun.jsp
+                        var pathName = window.document.location.pathname;
+                        var pos = curWwwPath.indexOf(pathName);
+                        //获取主机地址，如： http://localhost:8083
+                        var localhostPaht = curWwwPath.substring(0, pos);
+                        window.location = localhostPaht+"/userInfo/toindex";
+                }else{
+                    layer.msg(data.data);
+                }}
             })
-        }
-    })
+}
+})
 </script>
 </html>
