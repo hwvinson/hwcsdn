@@ -1,5 +1,6 @@
 package com.hw.csdn.controller;
 
+import com.example.common.util.BaseResultCodeConstant;
 import com.hw.csdn.dao.entity.PersonalArticle;
 import com.hw.csdn.dao.service.PersonalArticleService;
 import com.hw.csdn.util.EmptyUtil;
@@ -35,11 +36,11 @@ public class PersonalArticleController {
             }
             personalArticleService.update(personalArticlel);
             msg.setCode("personalArticle");
-            msg.setSuccess("0000");
+            msg.setSuccess(BaseResultCodeConstant.SUCCESS);
             msg.setData("修改成功");
         }catch (Exception e){
             msg.setCode("personalArticle");
-            msg.setSuccess("8888");
+            msg.setSuccess(BaseResultCodeConstant.ERROR);
             msg.setData(e+";"+e.getMessage());
         }
         return msg;
@@ -56,11 +57,11 @@ public class PersonalArticleController {
             personalArticlel.setUpdateDate(new Date());
             personalArticleService.save(personalArticlel);
             msg.setCode("personalArticle");
-            msg.setSuccess("0000");
+            msg.setSuccess(BaseResultCodeConstant.SUCCESS);
             msg.setData("新增成功");
         }catch (Exception e){
             msg.setCode("personalArticle");
-            msg.setSuccess("8888");
+            msg.setSuccess(BaseResultCodeConstant.ERROR);
             msg.setData(e+";"+e.getMessage());
         }
         return msg;

@@ -1,6 +1,7 @@
 package com.hw.csdn.dao.service.impl;
 
 
+import com.example.common.util.BaseResultCodeConstant;
 import com.hw.csdn.dao.entity.UserInfo;
 import com.hw.csdn.dao.service.UserService;
 import com.hw.csdn.repository.UserRepository;
@@ -35,7 +36,7 @@ public class UserServiceImpl implements UserService {
             userRepository.save(userInfo);
             em.close();
             msg.setCode("user/insert");
-            msg.setSuccess("0000");
+            msg.setSuccess(BaseResultCodeConstant.SUCCESS);
             msg.setData("注册成功");
         return msg;
     }
@@ -68,7 +69,7 @@ public class UserServiceImpl implements UserService {
         em.close();
         if (userInfos.size()>0){
             msg.setCode("user/login");
-            msg.setSuccess("0000");
+            msg.setSuccess(BaseResultCodeConstant.SUCCESS);
             msg.setData(userInfos.get(0));
         }
         return msg;

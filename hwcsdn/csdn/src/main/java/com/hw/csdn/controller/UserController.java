@@ -1,6 +1,7 @@
 package com.hw.csdn.controller;
 
 import com.alibaba.fastjson.JSONObject;
+import com.example.common.util.BaseResultCodeConstant;
 import com.hw.csdn.dao.entity.UserInfo;
 import com.hw.csdn.dao.service.UserService;
 import com.hw.csdn.util.EmptyUtil;
@@ -53,7 +54,7 @@ public class UserController {
             userInfo.setWechat(wechat);
             msg=userService.save(userInfo);
         }catch (Exception e){
-            msg.setSuccess("8888");
+            msg.setSuccess(BaseResultCodeConstant.ERROR);
             msg.setCode("user/insert");
             if (EmptyUtil.isEmpty(e.getMessage())){
                 msg.setData(e);
@@ -81,7 +82,7 @@ public class UserController {
             }
             msg=userService.userLogin(uname,upass);
         }catch (Exception e){
-            msg.setSuccess("8888");
+            msg.setSuccess(BaseResultCodeConstant.ERROR);
             msg.setCode("user/login");
             if (EmptyUtil.isEmpty(e.getMessage())){
                 msg.setData(e);

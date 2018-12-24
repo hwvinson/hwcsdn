@@ -1,6 +1,7 @@
 package com.example.csdnbff.user.controller;
 
 import com.example.common.user.UserInfo;
+import com.example.common.util.BaseResultCodeConstant;
 import com.example.common.util.JsonUtil;
 import com.example.common.util.Message;
 import com.example.csdnbff.user.service.UserService;
@@ -25,7 +26,7 @@ public class UserController {
         try {
             System.out.println(requestBody);
             msg = userService.userLogin(requestBody);
-            if ("0000".equals(msg.getSuccess())){
+            if (BaseResultCodeConstant.SUCCESS.equals(msg.getSuccess())){
                 HttpSession session=request.getSession();
                 UserInfo userInfo= JsonUtil.toBean(JsonUtil.convertObjectToJSON(msg.getData()),UserInfo.class);
                 session.setAttribute("userInfo",userInfo);
