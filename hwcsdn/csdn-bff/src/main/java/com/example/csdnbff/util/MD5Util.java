@@ -1,4 +1,4 @@
-package com.example.common.util;
+package com.example.csdnbff.util;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

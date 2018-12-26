@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <base id="base" href="${base}">
     <meta charset="UTF-8">
@@ -29,7 +29,7 @@
                         <input name="password" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;"value="" type="password" placeholder="请输入密码">
                     </div>
                     <div class="mb2"><a id = "sub" lay-filter="sub" class="act-but submit" href="javascript:;" style="color: #FFFFFF">登录</a></div>
-                    <div><a href="toregister.html" style="color: #faf8ff">未注册？立即注册</a></div>
+                    <div><a href="/user/toregister.html" style="color: #faf8ff">未注册？立即注册</a></div>
                 </form>
             </div>
         </div>

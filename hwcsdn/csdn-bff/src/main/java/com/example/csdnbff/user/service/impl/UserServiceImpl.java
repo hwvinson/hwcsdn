@@ -1,8 +1,9 @@
 package com.example.csdnbff.user.service.impl;
 
-import com.example.common.user.UserInfo;
-import com.example.common.util.Message;
+
+import com.example.csdnbff.resq.UserInfo;
 import com.example.csdnbff.user.service.UserService;
+import com.example.csdnbff.util.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -21,7 +22,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Message save(String requestBody) throws Exception {
-        return  this.restTemplate.postForObject(userServicePath+"/userInfo/insetUser",requestBody,Message.class);
+        return  this.restTemplate.postForObject(userServicePath+"/userInfo/insetUser",requestBody, Message.class);
     }
 
     @Override

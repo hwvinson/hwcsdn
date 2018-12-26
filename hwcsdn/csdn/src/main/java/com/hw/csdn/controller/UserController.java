@@ -1,9 +1,9 @@
 package com.hw.csdn.controller;
 
 import com.alibaba.fastjson.JSONObject;
-import com.example.common.util.BaseResultCodeConstant;
 import com.hw.csdn.dao.entity.UserInfo;
 import com.hw.csdn.dao.service.UserService;
+import com.hw.csdn.util.BaseResultCodeConstant;
 import com.hw.csdn.util.EmptyUtil;
 import com.hw.csdn.util.MD5Util;
 import com.hw.csdn.util.Message;

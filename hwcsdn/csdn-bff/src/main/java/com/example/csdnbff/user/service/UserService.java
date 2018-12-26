@@ -1,7 +1,8 @@
 package com.example.csdnbff.user.service;
 
-import com.example.common.user.UserInfo;
-import com.example.common.util.Message;
+
+import com.example.csdnbff.resq.UserInfo;
+import com.example.csdnbff.util.Message;
 
 import java.util.List;
 

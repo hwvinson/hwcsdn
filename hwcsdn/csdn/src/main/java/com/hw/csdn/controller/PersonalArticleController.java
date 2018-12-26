@@ -1,8 +1,8 @@
 package com.hw.csdn.controller;
 
-import com.example.common.util.BaseResultCodeConstant;
 import com.hw.csdn.dao.entity.PersonalArticle;
 import com.hw.csdn.dao.service.PersonalArticleService;
+import com.hw.csdn.util.BaseResultCodeConstant;
 import com.hw.csdn.util.EmptyUtil;
 import com.hw.csdn.util.JsonUtil;
 import com.hw.csdn.util.Message;

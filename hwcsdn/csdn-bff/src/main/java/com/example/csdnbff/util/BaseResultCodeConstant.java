@@ -1,7 +1,7 @@
-package com.example.common.util;
+package com.example.csdnbff.util;
 
 /**
- * @author yangkai
+ * @author hewei
  * @Date 2018年11月13日09:32:14
  */
 public class BaseResultCodeConstant {

@@ -1,4 +1,4 @@
-package com.example.common.util;
+package com.example.csdnbff.util;
 
 import lombok.Data;
 

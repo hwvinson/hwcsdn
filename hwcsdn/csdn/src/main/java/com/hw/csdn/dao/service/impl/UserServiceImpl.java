@@ -1,10 +1,10 @@
 package com.hw.csdn.dao.service.impl;
 
 
-import com.example.common.util.BaseResultCodeConstant;
 import com.hw.csdn.dao.entity.UserInfo;
 import com.hw.csdn.dao.service.UserService;
 import com.hw.csdn.repository.UserRepository;
+import com.hw.csdn.util.BaseResultCodeConstant;
 import com.hw.csdn.util.MD5Util;
 import com.hw.csdn.util.Message;
 import org.springframework.beans.factory.annotation.Autowired;

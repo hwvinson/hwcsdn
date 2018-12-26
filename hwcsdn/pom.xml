@@ -6,22 +6,31 @@
 
     <groupId>com.hw</groupId>
     <artifactId>hwcsdn</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
         <module>csdn</module>
         <module>csdn-bff</module>
         <module>common</module>
+        <module>eureka</module>
+        <module>zuul</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
         <docker.imageTag>1.0.1</docker.imageTag>
-        <docker.registryUrl>129.28.77.173:5000</docker.registryUrl>
+        <docker.registryUrl>118.24.138.173:5000</docker.registryUrl>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <fintecher-base-common-version>1.0-SNAPSHOT</fintecher-base-common-version>
     </properties>
+    <dependencies>
+        <dependency>
+            <groupId>com.example</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
     <build>
 
         <pluginManagement>

@@ -1,12 +1,11 @@
 package com.example.csdnbff.user.controller;
 
-import com.example.common.user.UserInfo;
-import com.example.common.util.BaseResultCodeConstant;
-import com.example.common.util.JsonUtil;
-import com.example.common.util.Message;
+import com.example.csdnbff.resq.UserInfo;
 import com.example.csdnbff.user.service.UserService;
+import com.example.csdnbff.util.BaseResultCodeConstant;
+import com.example.csdnbff.util.JsonUtil;
+import com.example.csdnbff.util.Message;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 

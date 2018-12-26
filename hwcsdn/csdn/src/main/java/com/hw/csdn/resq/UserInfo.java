@@ -1,4 +1,4 @@
-package com.example.common.user;
+package com.hw.csdn.resq;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;

@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.example</groupId>
     <artifactId>csdn-bff</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>csdn-bff</name>
     <description>Demo project for Spring Boot</description>
@@ -36,9 +36,10 @@
             <version>2.1.0.RELEASE</version>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.4</version>
+            <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>com.example</groupId>
@@ -69,7 +70,7 @@
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <configuration>
-                    <imageName>${project.name}:${project.version}</imageName>
+                    <imageName>118.24.138.173:5000/${project.name}:${project.version}</imageName>
                     <imageTags>
                         <imageTag>${docker.imageTag}</imageTag>
                     </imageTags>
