@@ -24,7 +24,7 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <fintecher-base-common-version>1.0-SNAPSHOT</fintecher-base-common-version>
-        <spring-cloud.version>Greenwich.M3</spring-cloud.version>
+        <spring.cloud.version>Greenwich.M3</spring.cloud.version>
     </properties>
     <dependencies>
         <dependency>
