@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="csdnbff" />
+        <module name="zuul" />
+        <module name="common" />
+        <module name="eureka" />
+        <module name="csdn" />
+        <module name="es-prefecture" />
+        <module name="csdn-bff" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="csdn" target="1.8" />
+      <module name="csdn-bff" target="1.8" />
+      <module name="csdnbff" target="1.7" />
+      <module name="es-prefecture" target="1.8" />
+      <module name="eureka" target="1.8" />
+      <module name="hwcsdn" target="1.8" />
+      <module name="webcsdn" target="1.7" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="csdn" options="-parameters" />
+      <module name="csdn-bff" options="-parameters" />
+      <module name="es-prefecture" options="-parameters" />
+      <module name="eureka" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>

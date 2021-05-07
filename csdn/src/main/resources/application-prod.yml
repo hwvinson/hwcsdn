@@ -1,0 +1,13 @@
+# database
+spring:
+  datasource:
+    url: jdbc:mysql://118.24.138.173:3306/mycsdn?useSSL=false
+    driver-class-name:  com.mysql.jdbc.Driver
+    username: root
+    password: hwcsdn#*
+  # jpa
+  jpa:
+    hibernate:
+      ddl-auto: update  # 建表策略
+    show-sql: true  #显示SQL语句
+

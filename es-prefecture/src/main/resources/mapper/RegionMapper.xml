@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.es.hw.mapper.RegionMapper">
+    <resultMap id="BaseResultMap" type="com.es.hw.entity.Region">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="name" jdbcType="VARCHAR" property="name" />
+        <result column="pid" jdbcType="INTEGER" property="pid" />
+        <result column="sort" jdbcType="INTEGER" property="sort" />
+        <result column="level" jdbcType="INTEGER" property="level" />
+        <result column="longcode" jdbcType="VARCHAR" property="longCode" />
+        <result column="code" jdbcType="VARCHAR" property="code" />
+    </resultMap>
+
+    <select id="queryRegion" resultMap="BaseResultMap">
+        select * from region where 1=1
+        <if test="null !=codeId and ''!=codeId">
+           and pid = #{codeId}
+        </if>
+        order by sort asc
+    </select>
+
+    <select id="queryRegionCount" resultType="java.lang.Integer">
+        select count(*) from region where 1=1
+        <if test="null !=codeId and ''!=codeId">
+            and pid = #{codeId}
+        </if>
+    </select>
+
+    <select id="queryRegionLimit" resultMap="BaseResultMap">
+        select * from region limit #{pageNum},#{pageSize}
+    </select>
+
+</mapper>
